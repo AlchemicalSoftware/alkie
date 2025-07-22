@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include8"
+        android:layout_marginTop="0dp"
+        android:scrollbarSize="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".high_wine_abv_reduction">
+
+                <EditText
+                    android:id="@+id/tv_highwines"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="60dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/xxxx_x"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="High wines"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="High wines ABV"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <EditText
+                    android:id="@+id/tv_highwines_abv"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="60dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/xx_x"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_highwines" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Target ABV"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <EditText
+                    android:id="@+id/tv_final_abv"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="60dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/xx_x"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_highwines_abv" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:text="mL"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_highwines"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:text="%"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_highwines_abv"
+                    app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:text="%"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_final_abv"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <View
+                    android:id="@+id/divider11"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="?android:textColorHint"
+                    android:backgroundTint="?android:textColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView61"
+                    app:layout_constraintVertical_bias="0.24" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Water required: "
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+                <TextView
+                    android:id="@+id/tv_reqwater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+                <Button
+                    android:id="@+id/btn_highwine_run"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:backgroundTint="?android:buttonStyle"
+                    android:text="Run"
+                    android:textColor="?android:textColor"
+                    android:textSize="20sp"
+                    app:cornerRadius="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+                <View
+                    android:id="@+id/divider12"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="195dp"
+                    android:background="?android:textColorHint"
+                    android:backgroundTint="?android:textColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ethanol: "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider12" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Final volume: "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <TextView
+                    android:id="@+id/tv_eth_tot"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintStart_toEndOf="@+id/textView44"
+                    app:layout_constraintTop_toBottomOf="@+id/divider12" />
+
+                <TextView
+                    android:id="@+id/tv_final_volume"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintStart_toEndOf="@+id/textView46"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_eth_tot" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/_250_ml"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/_330_ml"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/_500_ml"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+                <TextView
+                    android:id="@+id/bot_250ml"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintStart_toEndOf="@+id/textView52"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_final_volume" />
+
+                <TextView
+                    android:id="@+id/bot_330ml"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintStart_toEndOf="@+id/textView54"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_250ml" />
+
+                <TextView
+                    android:id="@+id/bot_500ml"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintStart_toEndOf="@+id/textView55"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_330ml" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="1dp"
+                    android:text="@string/_700_ml"
+                    app:layout_constraintEnd_toStartOf="@+id/bot_700ml"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_final_volume" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/_750_ml"
+                    app:layout_constraintEnd_toStartOf="@+id/bot_750ml"
+                    app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/_1000_ml"
+                    app:layout_constraintEnd_toStartOf="@+id/bot_1000ml"
+                    app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+                <TextView
+                    android:id="@+id/bot_700ml"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_final_volume" />
+
+                <TextView
+                    android:id="@+id/bot_750ml"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_700ml" />
+
+                <TextView
+                    android:id="@+id/bot_1000ml"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_750ml" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

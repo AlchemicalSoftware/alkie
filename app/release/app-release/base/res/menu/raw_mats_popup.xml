@@ -1,0 +1,82 @@
+
+«
+;
+android*http://schemas.android.com/apk/res/androidBmenu*Û
+Òitem"i
+*http://schemas.android.com/apk/res/androidtitle@string/sucrose"(áƒ„2
+ÜÀøstring/sucrose0"_
+*http://schemas.android.com/apk/res/androidid@+id/sucrose"(Ğ„2
+ª„ ø
+id/sucrose0+*Û
+Òitem"i
+*http://schemas.android.com/apk/res/androidtitle@string/maltose"
+(áƒ„2
+ì€Àøstring/maltose0"_
+*http://schemas.android.com/apk/res/androidid@+id/maltose"
+(Ğ„2
+ä‚ ø
+id/maltose0
+**Û
+Òitem"i
+*http://schemas.android.com/apk/res/androidtitle@string/glucose"(áƒ„2
+Ó€Àøstring/glucose0"_
+*http://schemas.android.com/apk/res/androidid@+id/glucose"(Ğ„2
+¸‚ ø
+id/glucose0**ß
+Öitem"k
+*http://schemas.android.com/apk/res/androidtitle@string/fructose"(áƒ„2
+Ğ€Àøstring/fructose0"a
+*http://schemas.android.com/apk/res/androidid@+id/fructose"(Ğ„2
+´‚ øid/fructose0+*Õ
+Ìitem"e
+*http://schemas.android.com/apk/res/androidtitle@string/apple"(áƒ„2
+¨€Àøstring/apple0"]
+*http://schemas.android.com/apk/res/androidid@+id/apple1"(Ğ„2
+Ô€ ø	id/apple10(*í
+äitem"{
+*http://schemas.android.com/apk/res/androidtitle@string/banana_cavendish"(áƒ„2#
+!©€Àøstring/banana_cavendish0"_
+*http://schemas.android.com/apk/res/androidid@+id/banana1"(Ğ„2
+İ€ ø
+id/banana103*ï
+æitem"w
+*http://schemas.android.com/apk/res/androidtitle@string/blueberry_wild"(áƒ„2!
+ª€Àøstring/blueberry_wild0"e
+*http://schemas.android.com/apk/res/androidid@+id/wblueberry"(Ğ„2
+©† øid/wblueberry01*å
+Üitem"q
+*http://schemas.android.com/apk/res/androidtitle@string/brown_sugar""(áƒ„2
+±€Àøstring/brown_sugar0"a
+*http://schemas.android.com/apk/res/androidid@+id/br_sugar""(Ğ„2
+ øid/br_sugar0".*×
+Îitem"g
+*http://schemas.android.com/apk/res/androidtitle@string/honey1"&(áƒ„2
+Ø€Àøstring/honey10"]
+*http://schemas.android.com/apk/res/androidid@+id/honey1"&(Ğ„2
+Ä‚ ø	id/honey10&**Û
+Òitem"i
+*http://schemas.android.com/apk/res/androidtitle@string/msyrup1"*(áƒ„2
+‡Àøstring/msyrup10"_
+*http://schemas.android.com/apk/res/androidid@+id/msyrup1"*(Ğ„2
+‰ƒ ø
+id/msyrup10***á
+Øitem"k
+*http://schemas.android.com/apk/res/androidtitle@string/molasses".(áƒ„2
+†Àøstring/molasses0"c
+*http://schemas.android.com/apk/res/androidid@+id/molasses1".(Ğ„2
+ƒ øid/molasses10.+*Ï
+Æitem"c
+*http://schemas.android.com/apk/res/androidtitle@string/plum"2(áƒ„2
+ÌÀøstring/plum0"Y
+*http://schemas.android.com/apk/res/androidid	@+id/plum"2(Ğ„2
+×ƒ øid/plum02'*ï
+æitem"w
+*http://schemas.android.com/apk/res/androidtitle@string/raspberry_wild"6(áƒ„2!
+ÍÀøstring/raspberry_wild0"e
+*http://schemas.android.com/apk/res/androidid@+id/wraspberry"6(Ğ„2
+±† øid/wraspberry061*ç
+Şitem"o
+*http://schemas.android.com/apk/res/androidtitle@string/strawberry":(áƒ„2
+ÛÀøstring/strawberry0"e
+*http://schemas.android.com/apk/res/androidid@+id/strawberry":(Ğ„2
+¦„ øid/strawberry0:-B

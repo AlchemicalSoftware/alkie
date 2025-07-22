@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sucrose"
+        android:title="@string/sucrose" />
+
+    <item
+        android:id="@+id/maltose"
+        android:title="@string/maltose"/>
+
+    <item
+        android:id="@+id/glucose"
+        android:title="@string/glucose"/>
+
+    <item
+        android:id="@+id/fructose"
+        android:title="@string/fructose"/>
+
+    <item
+        android:id="@+id/apple1"
+        android:title="@string/apple"/>
+
+    <item
+        android:id="@+id/banana1"
+        android:title="@string/banana_cavendish"/>
+
+    <item
+        android:id="@+id/wblueberry"
+        android:title="@string/blueberry_wild"/>
+
+    <item
+        android:id="@+id/br_sugar"
+        android:title="@string/brown_sugar"/>
+
+    <item
+        android:id="@+id/honey1"
+        android:title="@string/honey1" />
+
+    <item
+        android:id="@+id/msyrup1"
+        android:title="@string/msyrup1"/>
+
+    <item
+        android:id="@+id/molasses1"
+        android:title="@string/molasses"/>
+
+    <item
+        android:id="@+id/plum"
+        android:title="@string/plum"/>
+
+    <item
+        android:id="@+id/wraspberry"
+        android:title="@string/raspberry_wild"/>
+
+    <item
+        android:id="@+id/strawberry"
+        android:title="@string/strawberry"/>
+
+</menu>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include4"
+        android:layout_marginTop="0dp"
+        android:scrollbarSize="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTintMode="add"
+                tools:context=".relative_density_tempcomp">
+
+                <RadioGroup
+                    android:id="@+id/rad_group_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_celsius"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:checked="true"
+                        android:text="@string/celsius"
+                        android:textColor="?android:textColor"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_fahrenheit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:buttonTint="?android:textColor"
+                        android:buttonTintMode="src_atop"
+                        android:text="@string/fahrenheit"
+                        android:textColor="?android:textColor"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_tempsymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="°C"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/et_caltemp"
+                    app:layout_constraintTop_toBottomOf="@+id/rad_group_temp" />
+
+                <TextView
+                    android:id="@+id/tv_caltemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:lines="2"
+                    android:text="@string/calibration_ntemperature"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rad_group_temp" />
+
+                <EditText
+                    android:id="@+id/et_caltemp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/xxx_x"
+                    android:inputType="numberDecimal"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rad_group_temp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="?android:textColorHint"
+                    android:backgroundTint="?android:textColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_caltemp" />
+
+                <TextView
+                    android:id="@+id/tv_OG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/original_gravity"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+                <TextView
+                    android:id="@+id/tv_OGtemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Temperature"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_OG" />
+
+                <EditText
+                    android:id="@+id/et_calOG"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/x_xxx"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+                <EditText
+                    android:id="@+id/et_OGtemp"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/xxx_x"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_calOG" />
+
+                <TextView
+                    android:id="@+id/tv_tempsymbol2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="85dp"
+                    android:text="°C"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/et_OGtemp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="135dp"
+                    android:background="?android:textColorHint"
+                    android:backgroundTint="?android:textColor"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_FG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Final gravity"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+                <TextView
+                    android:id="@+id/tv_FGtemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Temperature"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_FG" />
+
+                <EditText
+                    android:id="@+id/et_calFG"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/x_xxx"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+                <EditText
+                    android:id="@+id/et_FGtemp"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="50dp"
+                    android:backgroundTint="?android:textColor"
+                    android:ems="10"
+                    android:hint="@string/xxx_x"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_calFG" />
+
+                <TextView
+                    android:id="@+id/tv_tempsymbol3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="85dp"
+                    android:text="°C"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/et_FGtemp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="135dp"
+                    android:background="?android:textColorHint"
+                    android:backgroundTint="?android:textColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Corrected FG"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_correctedOG" />
+
+                <TextView
+                    android:id="@+id/tv_corFG"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_corOG" />
+
+                <TextView
+                    android:id="@+id/tv_correctedOG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Corrected OG"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+                <TextView
+                    android:id="@+id/tv_corOG"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/abv_tv"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/tv_abvview"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_corFG" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginBottom="90dp"
+                    android:backgroundTint="?android:buttonStyle"
+                    android:onClick="reldenstempcomp"
+                    android:text="Run"
+                    android:textColor="?android:textColor"
+                    android:textSize="20sp"
+                    app:cornerRadius="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar" />
+
+
+</RelativeLayout>
